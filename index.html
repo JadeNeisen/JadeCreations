@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Welcome To My Profile</title>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="css/profile-styles-2.css" type="text/css" />
+    <script src="js/Profile2.js"></script>
+    <!-- font-family: 'Julius Sans One', sans-serif; -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Julius+Sans+One&display=swap"
+      rel="stylesheet"
+    />
+    <!-- font-family: 'Calligraffitti', cursive; -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Calligraffitti&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+
+  <body>
+    <!-- Full Page Menu -->
+    <div class="header" id="top">
+      <nav class="navbar">
+        <div class="dropdown">
+          <div class="contact">
+            <button>Contact</button>
+            <ul>
+              <li><a href="tel:1-780-668-9312">Phone</a></li>
+              <li><a href="mailto:Jade_neisen@yahoo.com">Email</a></li>
+            </ul>
+          </div>
+          <button><a href="#about" id="aboutButton">About</a></button>
+          <button><a href="#portfolio" id="portButton">Portfolio</a></button>
+        </div>
+      </nav>
+      <h1>Jade</h1>
+      <h2>
+        Front-End<br />
+        &nbsp;&nbsp;&nbsp;Web Design<br />
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;and Development
+      </h2>
+      <img src="images/BlackCat.png" width="100%" alt="BlackCat" />
+      <div class="links">
+        <a href="https://codepen.io/collection/AGOORJ" target="blank">
+          <button>
+            <i class="fa fa-codepen" style="font-size:30px">Codepen</i>
+          </button>
+        </a>
+        <a href="https://github.com/JadeNeisen" target="blank">
+          <button>
+            <i class="fa fa-github" aria-hidden="true" style="font-size:30px;"
+              >Github</i
+            >
+          </button>
+        </a>
+        <a
+          href="https://www.linkedin.com/in/jade-neisen-62a85b164/"
+          target="blank"
+        >
+          <button>
+            <i class="fa fa-linkedin-square" style="font-size:30px">Linkedin</i>
+          </button>
+        </a>
+      </div>
+    </div>
+
+    <!-- Mobile -->
+
+    <!-- Hamburger Menu Icon -->
+    <div class="mobile-menu">
+      <div class="hamIcon" onclick="hamMenu(this)">
+        <div class="hamburger">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+      </div>
+      <!-- Mobile Menu Dropdown -->
+      <ul class="mobile-dropdown">
+        <li>
+          <a href="https://codepen.io/collection/AGOORJ" target="blank">
+            <button>
+              <i class="fa fa-codepen" style="font-size:20px">Codepen</i>
+            </button>
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/JadeNeisen" target="blank">
+            <button>
+              <i class="fa fa-github" aria-hidden="true" style="font-size:20px;"
+                >Github</i
+              >
+            </button>
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://www.linkedin.com/in/jade-neisen-62a85b164/"
+            target="blank"
+          >
+            <button>
+              <i class="fa fa-linkedin-square" style="font-size:20px"
+                >Linkedin</i
+              >
+            </button>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <!-- Header -->
+    <div class="mobile-header">
+      <div class="mobile-head">
+        <h1>Jade</h1>
+        <h2>Front-End Web Design and Development</h2>
+      </div>
+    </div>
+    <!-- Contact -->
+    <div class="mobile-contact">
+      <button style="font-size:24px;">
+        <a href="tel:1-780-668-9312">Phone</a><i class="fa fa-phone"></i>
+      </button>
+      <button style="font-size:24px">
+        <a href="mailto:Jade_neisen@yahoo.com">Email</a
+        ><i class="fa fa-envelope"></i>
+      </button>
+    </div>
+
+    <!-- Main Content -->
+
+    <div id="about">
+      <div class="list">
+        <ul>
+          <li>HTML5</li>
+          <li>CSS3</li>
+          <li>JavaScript</li>
+          <li>Responsive Design</li>
+          <li>Accesability</li>
+        </ul>
+      </div>
+      <div class="about">
+        <h4>
+          Greetings,<br />
+          My name is Jade and I specialize in front-end web design and
+          development.
+        </h4>
+        <p>
+          I deeply enjoy the creative process that is necessary to build a
+          unique and modern website that will catch the publics attention. I've
+          taken it upon myself to learn multiple coding laguages so I may adapt
+          to any situation or need that may arise. As well, being that coding
+          and programming is constantly evolving, I believe my skills should be
+          too, so my education is, and will be ongoing.
+        </p>
+        <p>
+          With an extensive background in sales and customer service, I am more
+          than familiar with and experienced in the importance of customer
+          satisfaction which translates well into the field of web design.
+        </p>
+        <p>
+          In addition, I also have experience in video productiona and editing.
+          View my work on my
+          <a
+            href="https://www.youtube.com/channel/UClcyGBF1RLFnHmKc4BMIj2Q?view_as=subscriber"
+            target="blank"
+            >YouTube</a
+          >
+          channel.
+        </p>
+        <p>
+          You can also view examples of my work in web design and development on
+          <a href="https://codepen.io/collection/AGOORJ" target="blank"
+            >Codpen</a
+          >,
+          <a href="https://github.com/JadeNeisen" target="blank">Github</a> and
+          <a href="https://projects.invisionapp.com/d/main#/projects"
+            >invisionapp</a
+          >
+        </p>
+        <p>
+          Check out my full resume and credentials on
+          <a
+            href="https://www.linkedin.com/in/jade-neisen-62a85b164/"
+            target="blank"
+            >Linkedin</a
+          >
+        </p>
+      </div>
+      <div class="list2">
+        <ul>
+          <li>Creative</li>
+          <li>Unique</li>
+          <li>Detail Oriented</li>
+          <li>Experienced</li>
+        </ul>
+      </div>
+      <div class="back-top">
+        <a href="#top"
+          ><i class="fa fa-arrow-circle-up" style="font-size:24px"></i
+        ></a>
+      </div>
+    </div>
+    <div id="portfolio">
+      <h3>Portfolio</h3>
+      <h4>Live Sites</h4>
+      <a
+        href="https://jadeneisen.github.io/QuintessaKelly/index.html/Quintessa.html"
+        target="blank"
+        ><video autoplay muted loop class="animatedFire">
+          <source
+            src="https://www.dropbox.com/s/6a7qrra2584xggm/Quintessa.mp4?raw=1"
+            type="video/mp4"
+          />
+        </video>
+      </a>
+      <div class="back-top">
+        <a href="#top"
+          ><i class="fa fa-arrow-circle-up" style="font-size:24px"></i
+        ></a>
+      </div>
+    </div>
+
+    <footer></footer>
+  </body>
+</html>
