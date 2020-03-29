@@ -248,6 +248,78 @@ ul {
     font-size: 110%;
     text-shadow: 0.01em 0.01em 0.09em black;
   }
+  .graph-design {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+  }
+  .graph-design img {
+    height: 120px;
+    width: 70%;
+    margin-left: 15%;
+  }
+  #FAicon {
+    color: rgb(255, 255, 255);
+    background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.01),
+      rgb(0, 0, 0),
+      rgba(0, 0, 0, 0.01)
+    );
+    font-size: 48px;
+    width: 100%;
+    padding: 2%;
+    text-align: center;
+    transition: all 0.5s ease;
+  }
+  .media-info {
+    width: 100%;
+    margin: auto;
+    display: inline-flexbox;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+  }
+  footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    background-image: linear-gradient(
+      rgba(0, 0, 0, 0.959),
+      rgb(139, 1, 139),
+      rgba(0, 0, 0, 0.959)
+    );
+  }
+  #footIcon {
+    margin: 5px;
+    color: purple;
+    font-size: 48px;
+    transition: 0.5s;
+  }
+  .testimonials {
+    width: 90%;
+    color: white;
+  }
+  .footLinks {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+  .footContact {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .footContact h4 {
+    color: rgb(255, 255, 255);
+    font-size: 150%;
+    margin: 3px;
+  }
 }
 
 @media screen and (min-width: 1000px) {
