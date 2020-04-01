@@ -19,7 +19,7 @@ ul {
   list-style-type: none;
 }
 
-@media screen and (max-width: 999px) {
+@media screen and (max-width: 767px) {
   .header {
     display: none;
   }
@@ -244,10 +244,6 @@ ul {
     text-align: center;
     color: rgb(255, 255, 255);
   }
-  .quin-info h5 {
-    font-size: 110%;
-    text-shadow: 0.01em 0.01em 0.09em black;
-  }
   .graph-design {
     display: flex;
     justify-content: space-evenly;
@@ -255,13 +251,10 @@ ul {
     flex-direction: column;
     color: white;
   }
-  .graph-design img {
-    height: 120px;
-    width: 70%;
-    margin-left: 15%;
-  }
-  #FAicon {
-    color: rgb(255, 255, 255);
+  .graph-design button,
+  .media-info button {
+    border: none;
+    background-color: transparent;
     background-image: linear-gradient(
       to right,
       rgba(0, 0, 0, 0.01),
@@ -273,6 +266,11 @@ ul {
     padding: 2%;
     text-align: center;
     transition: all 0.5s ease;
+  }
+  .graph-design a,
+  .media-info a {
+    color: white;
+    font-size: 50%;
   }
   .media-info {
     width: 100%;
@@ -321,8 +319,309 @@ ul {
     margin: 3px;
   }
 }
+@media screen and (min-width: 768px) and (max-width: 1369px) {
+  .header {
+    display: none;
+  }
+  .back-top {
+    display: none;
+  }
+  .mobile-menu {
+    position: relative;
+  }
+  .mobile-menu button {
+    background-color: transparent;
+    border: none;
+  }
+  body {
+    height: 100vh;
+  }
 
-@media screen and (min-width: 1000px) {
+  /* Hamburger Menu Icon */
+
+  .hamburger {
+    display: block;
+    margin-top: 5px;
+  }
+  .line1,
+  .line2,
+  .line3 {
+    width: 50px;
+    height: 5px;
+    display: block;
+    background-image: linear-gradient(rgb(255, 0, 255), rgba(0, 0, 0, 0.397));
+    margin: 8px;
+    border-radius: 10px;
+    transition: all 0.5s ease-in-out;
+  }
+  .mobile-dropdown li {
+    width: 98%;
+    padding: 0.5%;
+    background-color: rgba(172, 1, 172, 0.5);
+    border: solid 1px rgb(32, 32, 32);
+  }
+  .mobile-dropdown {
+    position: absolute;
+    width: 98%;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+  }
+
+  /* Nav Animations */
+
+  .change .line1 {
+    transform: translate(-3px, 10px) rotate(45deg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgb(167, 0, 167));
+  }
+  .change .line3 {
+    transform: translate(-5px, -15px) rotate(-45deg);
+    background-image: linear-gradient(rgb(167, 0, 167), rgba(0, 0, 0, 0.5));
+  }
+  .change .line2 {
+    opacity: 0;
+  }
+  .mobile-dropdown.active {
+    position: absolute;
+    width: 98%;
+    opacity: 1;
+  }
+
+  /* Mobile Header */
+
+  .mobile-header {
+    margin: 0 auto;
+    margin-top: -50px;
+    width: 100%;
+    height: 30vh;
+    background-image: url("../images/BlackCat2.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-x: center;
+    display: flex;
+    align-items: center;
+  }
+  .mobile-head h1 {
+    font-family: "Calligraffitti", cursive;
+    text-shadow: 0.01em 0.01em 0.09em rgb(255, 2, 255);
+    color: rgb(59, 0, 59);
+    margin-left: 10%;
+    margin-top: 20%;
+    font-size: 400%;
+    width: 100%;
+  }
+  .mobile-head h2 {
+    text-shadow: 0.01em 0.01em 0.09em rgb(255, 2, 255);
+    color: rgb(59, 0, 59);
+    text-align: right;
+    margin-left: 40%;
+    font-size: 150%;
+    width: 100%;
+  }
+  .mobile-navbar button {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(225, 0, 255, 0.301);
+    border: solid 1px rgb(0, 0, 0);
+    padding: 1%;
+    color: rgb(255, 255, 255);
+    font-size: 100%;
+  }
+  .mobile-contact {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgb(0, 0, 0);
+    padding: 0.5%;
+  }
+  .mobile-contact button {
+    display: inline-flex;
+    justify-content: space-evenly;
+    width: 45%;
+    background-image: linear-gradient(rgb(215, 0, 223), rgb(88, 0, 88));
+    border: outset 1.5px rgb(112, 112, 112);
+    border-radius: 10px;
+    font-weight: 800;
+    text-shadow: 0.01em 0.01em 0.09em rgb(255, 255, 255);
+    box-shadow: 0.01em 0.01em 0.09em rgb(255, 255, 255);
+  }
+
+  /* Main Content */
+
+  #about {
+    background-image: linear-gradient(
+      rgba(0, 0, 0, 0.959),
+      rgb(139, 1, 139),
+      rgba(0, 0, 0, 0.959)
+    );
+    padding: 5%;
+    width: 98%;
+    margin: 0 auto;
+    margin-top: 40px;
+  }
+  .about {
+    width: 98%;
+    margin: 2% auto;
+  }
+  .about h4 {
+    color: rgb(255, 255, 255);
+    font-size: 100%;
+  }
+  .about p {
+    color: white;
+    margin-top: 1%;
+    font-size: 100%;
+  }
+  .about a {
+    font-weight: 900;
+    color: white;
+    text-decoration: underline;
+  }
+  .list ul {
+    list-style-type: none;
+    color: rgb(0, 0, 0);
+    text-shadow: 0.01em 0.01em 0.09em rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 100%;
+    font-style: italic;
+    font-weight: 900;
+  }
+  .back-top a {
+    color: rgb(71, 0, 71);
+    padding: 1%;
+    margin: 1%;
+  }
+  .list2 ul {
+    list-style-type: none;
+    color: rgb(0, 0, 0);
+    text-shadow: 0.01em 0.01em 0.09em rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 100%;
+    font-style: italic;
+    font-weight: 900;
+  }
+  #portfolio {
+    background-image: linear-gradient(
+      rgba(0, 0, 0, 0.959),
+      rgb(139, 1, 139),
+      rgba(0, 0, 0, 0.959)
+    );
+    padding: 5%;
+    width: 98%;
+    margin: 0 auto;
+    margin-top: 40px;
+  }
+  #portfolio h4 {
+    text-align: center;
+    color: rgb(0, 0, 0);
+    text-shadow: 0.01em 0.01em 0.09em rgb(255, 255, 255);
+    font-size: 150%;
+  }
+  #portfolio h3 {
+    text-align: center;
+    color: rgb(0, 0, 0);
+    text-shadow: 0.01em 0.01em 0.09em rgb(255, 255, 255);
+    font-size: 200%;
+  }
+  .animatedFire {
+    display: none;
+  }
+  .quintessa {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .quintessa img {
+    border: outset 2px rgb(54, 54, 54);
+  }
+  .quin-info {
+    text-align: center;
+    color: rgb(255, 255, 255);
+  }
+  .graph-design {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+  }
+  .graph-design button,
+  .media-info button {
+    border: none;
+    background-color: transparent;
+    background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.01),
+      rgb(0, 0, 0),
+      rgba(0, 0, 0, 0.01)
+    );
+    font-size: 48px;
+    width: 100%;
+    padding: 2%;
+    text-align: center;
+    transition: all 0.5s ease;
+  }
+  .graph-design a,
+  .media-info a {
+    color: white;
+    font-size: 50%;
+  }
+  .media-info {
+    width: 100%;
+    margin: auto;
+    display: inline-flexbox;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+  }
+  footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    background-image: linear-gradient(
+      rgba(0, 0, 0, 0.959),
+      rgb(139, 1, 139),
+      rgba(0, 0, 0, 0.959)
+    );
+  }
+  #footIcon {
+    margin: 5px;
+    color: purple;
+    font-size: 48px;
+    transition: 0.5s;
+  }
+  .testimonials {
+    width: 90%;
+    color: white;
+  }
+  .footLinks {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+  .footContact {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .footContact h4 {
+    color: rgb(255, 255, 255);
+    font-size: 150%;
+    margin: 3px;
+  }
+}
+@media screen and (min-width: 1370px) {
   .hamIcon {
     display: none;
   }
@@ -616,20 +915,51 @@ ul {
     align-items: center;
     margin-top: -40px;
   }
-  .graph-design img {
-    margin-top: 10px;
-    width: 60%;
-    margin-left: 90px;
-    border: outset 2px rgb(63, 63, 63);
-    border-radius: 10px;
+  .graph-design h3 {
+    margin-top: -39%;
+  }
+  .graph-design p {
+    margin-left: 5%;
+  }
+  .graph-design button,
+  .media-info button {
+    border: none;
+    background-color: transparent;
+    background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.01),
+      rgb(0, 0, 0),
+      rgba(0, 0, 0, 0.01)
+    );
+    font-size: 48px;
+    width: 100%;
+    padding: 2%;
+    text-align: center;
     transition: all 0.5s ease;
   }
-  .graph-design h5 {
-    text-shadow: 0.01em 0.01em 0.09em black;
+  .graph-design a,
+  .media-info a {
+    color: white;
+    transition: all 0.5s ease;
   }
-  .graph-design img:hover,
-  .graph-design img:focus {
-    border: outset 2px rgb(228, 228, 228);
+  .graph-design button:hover,
+  .graph-design button:focus,
+  .media-info button:hover,
+  .media-info button:focus {
+    border: none;
+    background-color: transparent;
+    background-image: linear-gradient(
+      to right,
+      rgba(255, 255, 255, 0.01),
+      rgb(255, 255, 255),
+      rgba(255, 255, 255, 0.01)
+    );
+  }
+  .graph-design a:hover,
+  .graph-design a:focus,
+  .media-info a:hover,
+  .media-info a:focus {
+    color: black;
   }
   .quin-info p {
     text-align: center;
@@ -661,30 +991,6 @@ ul {
   .animatedFire:focus {
     border: inset 2px rgb(255, 255, 255);
   }
-  #FAicon {
-    color: rgb(255, 255, 255);
-    background-image: linear-gradient(
-      to right,
-      rgba(0, 0, 0, 0.01),
-      rgb(0, 0, 0),
-      rgba(0, 0, 0, 0.01)
-    );
-    font-size: 48px;
-    width: 100%;
-    padding: 2%;
-    text-align: center;
-    transition: all 0.5s ease;
-  }
-  #FAicon:hover,
-  #FAicon:focus {
-    color: rgb(107, 0, 121);
-    background-image: linear-gradient(
-      to right,
-      rgba(255, 255, 255, 0.01),
-      rgb(255, 255, 255),
-      rgba(255, 255, 255, 0.01)
-    );
-  }
   .media-info {
     width: 80%;
     margin: auto;
@@ -692,6 +998,9 @@ ul {
     justify-content: space-around;
     align-items: center;
     flex-direction: column;
+  }
+  .media-info a {
+    font-family: "Julius Sans One", sans-serif;
   }
   #portfolio .back-top {
     position: absolute;
