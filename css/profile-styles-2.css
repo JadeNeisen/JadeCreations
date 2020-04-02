@@ -215,71 +215,69 @@ ul {
     margin: 0 auto;
     margin-top: 40px;
   }
-  #portfolio h4 {
-    text-align: center;
-    color: rgb(0, 0, 0);
-    text-shadow: 0.01em 0.01em 0.09em rgb(255, 255, 255);
-    font-size: 150%;
-  }
   #portfolio h3 {
     text-align: center;
     color: rgb(0, 0, 0);
     text-shadow: 0.01em 0.01em 0.09em rgb(255, 255, 255);
     font-size: 200%;
   }
-  .animatedFire {
-    display: none;
-  }
-  .quintessa {
-    width: 100%;
+  .quintessa,
+  .dalzells {
     display: flex;
     justify-content: center;
     align-items: center;
+    color: white;
     flex-direction: column;
-  }
-  .quintessa img {
-    border: outset 2px rgb(54, 54, 54);
-  }
-  .quin-info {
     text-align: center;
-    color: rgb(255, 255, 255);
+    font-size: 100%;
+    margin-left: 3%;
   }
-  .graph-design {
+  .quintessa h4,
+  .dalzells h4 {
+    color: white;
+    font-size: 100%;
+    text-shadow: 0.01em 0.01em 0.09em black;
+  }
+  .Sites img {
+    border: outset 2px rgb(66, 1, 47);
+    height: 145px;
+  }
+  .media {
+    margin-top: 3%;
+    margin-bottom: 3%;
+  }
+  .twitch,
+  .youtube,
+  .vision {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     flex-direction: column;
     color: white;
+    font-size: 100%;
+    text-align: center;
   }
-  .graph-design button,
-  .media-info button {
+  .vision p {
+    margin-top: 3%;
+  }
+  .media button {
     border: none;
     background-color: transparent;
     background-image: linear-gradient(
       to right,
-      rgba(0, 0, 0, 0.01),
-      rgb(0, 0, 0),
-      rgba(0, 0, 0, 0.01)
+      rgba(0, 0, 0, 0.001),
+      black,
+      rgba(0, 0, 0, 0.001)
     );
-    font-size: 48px;
-    width: 100%;
-    padding: 2%;
-    text-align: center;
-    transition: all 0.5s ease;
+    color: rgb(129, 83, 129);
+    width: 250px;
+    height: 60px;
+    font-size: 200%;
+    font-weight: 800;
   }
-  .graph-design a,
-  .media-info a {
+  .youtube a {
     color: white;
-    font-size: 50%;
-  }
-  .media-info {
-    width: 100%;
-    margin: auto;
-    display: inline-flexbox;
-    justify-content: space-around;
-    align-items: center;
-    flex-direction: column;
-    color: white;
+    text-decoration: underline;
   }
   footer {
     display: flex;
@@ -517,71 +515,67 @@ ul {
     margin: 0 auto;
     margin-top: 40px;
   }
-  #portfolio h4 {
-    text-align: center;
-    color: rgb(0, 0, 0);
-    text-shadow: 0.01em 0.01em 0.09em rgb(255, 255, 255);
-    font-size: 150%;
-  }
   #portfolio h3 {
     text-align: center;
     color: rgb(0, 0, 0);
     text-shadow: 0.01em 0.01em 0.09em rgb(255, 255, 255);
     font-size: 200%;
   }
-  .animatedFire {
-    display: none;
-  }
-  .quintessa {
-    width: 100%;
+  .quintessa,
+  .dalzells {
     display: flex;
     justify-content: center;
     align-items: center;
+    color: white;
     flex-direction: column;
-  }
-  .quintessa img {
-    border: outset 2px rgb(54, 54, 54);
-  }
-  .quin-info {
     text-align: center;
-    color: rgb(255, 255, 255);
+    font-size: 100%;
+    margin-left: 3%;
   }
-  .graph-design {
+  .quintessa h4,
+  .dalzells h4 {
+    color: white;
+    font-size: 100%;
+    text-shadow: 0.01em 0.01em 0.09em black;
+  }
+  .Sites img {
+    border: outset 2px rgb(66, 1, 47);
+    height: 150px;
+  }
+  .media {
+    margin-top: 3%;
+    margin-bottom: 3%;
+  }
+  .twitch,
+  .youtube,
+  .vision {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    margin-left: 2%;
     flex-direction: column;
     color: white;
+    font-size: 100%;
+    text-align: center;
   }
-  .graph-design button,
-  .media-info button {
+  .media button {
     border: none;
     background-color: transparent;
     background-image: linear-gradient(
       to right,
-      rgba(0, 0, 0, 0.01),
-      rgb(0, 0, 0),
-      rgba(0, 0, 0, 0.01)
+      rgba(0, 0, 0, 0.001),
+      black,
+      rgba(0, 0, 0, 0.001)
     );
-    font-size: 48px;
-    width: 100%;
-    padding: 2%;
-    text-align: center;
-    transition: all 0.5s ease;
+    color: rgb(129, 83, 129);
+    width: 400px;
+    height: 60px;
+    font-size: 200%;
+    font-weight: 800;
   }
-  .graph-design a,
-  .media-info a {
+  .youtube a {
     color: white;
-    font-size: 50%;
-  }
-  .media-info {
-    width: 100%;
-    margin: auto;
-    display: inline-flexbox;
-    justify-content: space-around;
-    align-items: center;
-    flex-direction: column;
-    color: white;
+    text-decoration: underline;
   }
   footer {
     display: flex;
@@ -632,9 +626,6 @@ ul {
     display: none;
   }
   .mobile-header {
-    display: none;
-  }
-  .quintessa img {
     display: none;
   }
 
@@ -880,6 +871,10 @@ ul {
   }
   #portfolio {
     position: relative;
+    display: inline-flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
     background-image: linear-gradient(
       to right,
       rgba(0, 0, 0, 0.959),
@@ -890,83 +885,6 @@ ul {
     width: 98%;
     margin: 0 auto;
     margin-bottom: 10px;
-    display: inline-flex;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-direction: row;
-  }
-  .graph-design,
-  .Sites,
-  .media {
-    width: 35%;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin-top: 10px;
-    color: rgb(255, 255, 255);
-    font-size: 110%;
-    font-weight: 500;
-  }
-  .graph-design {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    margin-top: -40px;
-  }
-  .graph-design h3 {
-    margin-top: -39%;
-  }
-  .graph-design p {
-    margin-left: 5%;
-  }
-  .graph-design button,
-  .media-info button {
-    border: none;
-    background-color: transparent;
-    background-image: linear-gradient(
-      to right,
-      rgba(0, 0, 0, 0.01),
-      rgb(0, 0, 0),
-      rgba(0, 0, 0, 0.01)
-    );
-    font-size: 48px;
-    width: 100%;
-    padding: 2%;
-    text-align: center;
-    transition: all 0.5s ease;
-  }
-  .graph-design a,
-  .media-info a {
-    color: white;
-    transition: all 0.5s ease;
-  }
-  .graph-design button:hover,
-  .graph-design button:focus,
-  .media-info button:hover,
-  .media-info button:focus {
-    border: none;
-    background-color: transparent;
-    background-image: linear-gradient(
-      to right,
-      rgba(255, 255, 255, 0.01),
-      rgb(255, 255, 255),
-      rgba(255, 255, 255, 0.01)
-    );
-  }
-  .graph-design a:hover,
-  .graph-design a:focus,
-  .media-info a:hover,
-  .media-info a:focus {
-    color: black;
-  }
-  .quin-info p {
-    text-align: center;
-  }
-  .quin-info h5 {
-    font-size: 200%;
-    text-shadow: 0.01em 0.01em 0.09em black;
   }
   #portfolio h3 {
     color: rgb(0, 0, 0);
@@ -976,32 +894,78 @@ ul {
     font-weight: 900;
     text-align: center;
   }
-  .Sites h3 {
-    margin-top: -10%;
+  .quintessa,
+  .dalzells {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    width: 45%;
+    flex-direction: column;
+    text-align: center;
+    font-size: 120%;
+    margin-left: 3%;
+  }
+  .quintessa h4,
+  .dalzells h4 {
+    color: white;
+    font-size: 150%;
+    text-shadow: 0.01em 0.01em 0.09em black;
+  }
+  .Sites img {
+    border: outset 2px rgb(66, 1, 47);
+    height: 150px;
+    transition: all 0.5s ease;
+  }
+  .Sites img:hover,
+  .Sites img:focus {
+    border: inset 2px rgb(219, 172, 223);
+  }
+  .media {
+    margin-top: 3%;
+    margin-bottom: 3%;
+  }
+  .twitch,
+  .youtube,
+  .vision {
+    display: inline-flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 30%;
+    margin-left: 2%;
+    flex-direction: column;
+    color: white;
+    font-size: 120%;
     text-align: center;
   }
-  .animatedFire {
-    width: 350px;
-    border: outset 2px rgb(44, 44, 44);
-    border-radius: 10%;
-    transition: all 0.3s ease-in-out;
-    margin-left: 72px;
+  .media button {
+    border: none;
+    background-color: transparent;
+    background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.001),
+      black,
+      rgba(0, 0, 0, 0.001)
+    );
+    color: rgb(129, 83, 129);
+    width: 400px;
+    height: 60px;
+    font-size: 200%;
+    font-weight: 800;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
   }
-  .animatedFire:hover,
-  .animatedFire:focus {
-    border: inset 2px rgb(255, 255, 255);
+  .media button:hover,
+  .media button:focus {
+    background-image: linear-gradient(
+      to right,
+      rgba(255, 255, 255, 0.001),
+      rgb(255, 255, 255),
+      rgba(255, 255, 255, 0.001)
+    );
+    text-shadow: 0.01em 0.01em 0.09em rgb(255, 2, 255);
   }
-  .media-info {
-    width: 80%;
-    margin: auto;
-    display: inline-flexbox;
-    justify-content: space-around;
-    align-items: center;
-    flex-direction: column;
-  }
-  .media-info a {
-    font-family: "Julius Sans One", sans-serif;
-  }
+
   #portfolio .back-top {
     position: absolute;
     bottom: 10px;
