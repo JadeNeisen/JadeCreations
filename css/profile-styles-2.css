@@ -163,7 +163,7 @@ ul {
   }
   .about h4 {
     color: rgb(255, 255, 255);
-    font-size: 100%;
+    font-size: 130%;
   }
   .about p {
     color: white;
@@ -809,12 +809,15 @@ ul {
   }
   .about h4 {
     color: rgb(255, 255, 255);
-    font-size: 150%;
+    font-size: 180%;
+    font-weight: 900;
+    text-shadow: 0.01em 0.01em 0.12em black;
   }
   .about p {
     color: white;
     margin-top: 1%;
     font-size: 120%;
+    font-weight: 600;
   }
   .about a {
     font-weight: 900;
