@@ -247,15 +247,24 @@ ul {
     margin-bottom: 3%;
   }
   .twitch,
-  .youtube,
-  .vision {
+  .youtube {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    margin-left: 2%;
     flex-direction: column;
     color: white;
     font-size: 100%;
     text-align: center;
+  }
+  .design {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    img {
+      width: 24vh;
+    }
   }
   .vision p {
     margin-top: 3%;
@@ -547,8 +556,7 @@ ul {
     margin-bottom: 3%;
   }
   .twitch,
-  .youtube,
-  .vision {
+  .youtube {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -557,6 +565,17 @@ ul {
     color: white;
     font-size: 100%;
     text-align: center;
+  }
+  .design {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    img {
+      width: 20%;
+      height: 90px;
+      margin-left: 3%;
+    }
   }
   .media button {
     border: none;
@@ -927,19 +946,50 @@ ul {
   .media {
     margin-top: 3%;
     margin-bottom: 3%;
+    width: 100%;
   }
   .twitch,
-  .youtube,
-  .vision {
+  .youtube {
     display: inline-flex;
     justify-content: space-evenly;
     align-items: center;
-    width: 30%;
+    width: 47%;
     margin-left: 2%;
     flex-direction: column;
     color: white;
     font-size: 120%;
     text-align: center;
+  }
+  .design {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    h3 {
+      margin-bottom: 5px;
+    }
+    section {
+      margin-bottom: 20px;
+    }
+  }
+  .Graphic-design {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+  }
+  .mock-ups {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    img {
+      height: 200px;
+      margin: 5px;
+    }
+    h3 {
+      width: 100%;
+    }
   }
   .media button {
     border: none;
