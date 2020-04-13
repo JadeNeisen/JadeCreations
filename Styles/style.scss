@@ -56,7 +56,7 @@ ul {
   }
   .mobile-dropdown li {
     width: 98%;
-    padding: 0.5%;
+    padding: 1.5%;
     background-color: rgba(172, 1, 172, 0.5);
     border: solid 1px rgb(32, 32, 32);
   }
@@ -263,7 +263,12 @@ ul {
     align-items: center;
     flex-direction: column;
     img {
-      width: 24vh;
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: row;
+      flex-wrap: wrap;
+      width: 49%;
     }
   }
   .vision p {

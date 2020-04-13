@@ -60,7 +60,7 @@ ul {
   }
   .mobile-dropdown li {
     width: 98%;
-    padding: 0.5%;
+    padding: 1.5%;
     background-color: rgba(172, 1, 172, 0.5);
     border: solid 1px #202020;
   }
@@ -321,7 +321,22 @@ ul {
             flex-direction: column;
   }
   .design img {
-    width: 24vh;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 49%;
   }
   .vision p {
     margin-top: 3%;
