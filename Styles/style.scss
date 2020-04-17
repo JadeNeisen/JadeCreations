@@ -977,13 +977,9 @@ ul {
       margin-bottom: 20px;
     }
   }
-  .Graphic-design {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-  }
-  .mock-ups {
+  .mock-ups,
+  .Graphic-design,
+  .photo-manipulation {
     display: flex;
     justify-content: center;
     align-items: center;

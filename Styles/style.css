@@ -1211,22 +1211,9 @@ ul {
   .design section {
     margin-bottom: 20px;
   }
-  .Graphic-design {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-  }
-  .mock-ups {
+  .mock-ups,
+  .Graphic-design,
+  .photo-manipulation {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1239,11 +1226,15 @@ ul {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
-  .mock-ups img {
+  .mock-ups img,
+  .Graphic-design img,
+  .photo-manipulation img {
     height: 200px;
     margin: 5px;
   }
-  .mock-ups h3 {
+  .mock-ups h3,
+  .Graphic-design h3,
+  .photo-manipulation h3 {
     width: 100%;
   }
   .media button {
