@@ -1030,6 +1030,17 @@ font-weight: 800;
       font-weight: 900;
       text-align: center;
     }
+    .list3{
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      flex-direction: row;
+      color: rgb(255, 255, 255);
+      text-shadow: .02em .02em .15em rgb(0, 0, 0);
+      font-size: 160%;
+      padding: 1%;
+      font-style: italic;
+    }
     section {
       margin-bottom: 20px;
     }
