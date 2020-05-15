@@ -244,8 +244,8 @@ text-shadow: .01em .01em .09em rgb(0, 0, 0);
     padding-left: 0;
   }
     img {
-      height: 40px;
-      width: 15%;
+      height: 55px;
+      width: 25%;
       display: flexbox;
       justify-content: center;
       align-self: center;
@@ -255,10 +255,7 @@ text-shadow: .01em .01em .09em rgb(0, 0, 0);
     }
     .Graphic-design, .photo-manipulation{
       width: 80%;
-      margin-left: -2%;
-    }
-    .photo-manipulation{
-      margin-left: 30%;
+      margin-left: 18%;
     }
   }
 
@@ -591,8 +588,8 @@ margin: 2%;
     width: 100%;
   }
   img {
-    height: 70px;
-    width: 15%;
+    height: 120px;
+    width: 30%;
     display: flexbox;
     justify-content: center;
     align-self: center;
@@ -602,9 +599,7 @@ margin: 2%;
   }
   .Graphic-design, .photo-manipulation{
     width: 80%;
-  }
-  .photo-manipulation{
-    margin-left: 30%;
+    margin-left: 8%;
   }
 }
 
