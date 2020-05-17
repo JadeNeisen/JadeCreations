@@ -17,7 +17,7 @@ a {
 }
 
 @media screen and (max-width: 767px) {
-  .header, .dropdown {
+  .header, .dropdown, .topArrow {
     display: none;
   }
   .mobile-menu {
@@ -129,12 +129,14 @@ a {
   }
   .mobile-contact button {
     display: inline-flex;
-    justify-content: space-evenly;
-    width: 45%;
+    justify-content: space-around;
+    align-items: center;
+    width: 30%;
     background-image: linear-gradient(rgb(215, 0, 223), rgb(88, 0, 88));
     border: outset 1.5px rgb(112, 112, 112);
     border-radius: 10px;
-    font-weight: 800;
+    font-weight: bolder;
+    font-size: 125%;
     text-shadow: 0.01em 0.01em 0.09em rgb(255, 255, 255);
     box-shadow: 0.01em 0.01em 0.09em rgb(255, 255, 255);
   }
@@ -358,7 +360,7 @@ text-shadow: .01em .01em .09em rgb(0, 0, 0);
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1369px) {
-  .header, .dropdown {
+  .header, .dropdown, .topArrow {
     display: none;
   }
   .mobile-menu {
@@ -476,12 +478,14 @@ text-shadow: .01em .01em .09em rgb(0, 0, 0);
   }
   .mobile-contact button {
     display: inline-flex;
-    justify-content: space-evenly;
-    width: 45%;
+    justify-content: space-around;
+    align-items: center;
+    width: 30%;
     background-image: linear-gradient(rgb(215, 0, 223), rgb(88, 0, 88));
     border: outset 1.5px rgb(112, 112, 112);
     border-radius: 10px;
-    font-weight: 800;
+    font-weight: bolder;
+    font-size: 200%;
     text-shadow: 0.01em 0.01em 0.09em rgb(255, 255, 255);
     box-shadow: 0.01em 0.01em 0.09em rgb(255, 255, 255);
   }
@@ -1000,6 +1004,7 @@ font-weight: 800;
   //graphic design section
   
   #design {
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1045,6 +1050,12 @@ font-weight: 800;
       margin-top: -13px;
       background-color: black;
     }
+    .topArrow{
+      position: absolute;
+      left: 2.5%;
+      bottom: 1%;
+      padding-bottom: 1%;
+  }
   }
   
   .Graphic-design,
@@ -1073,6 +1084,7 @@ font-weight: 800;
   //Media section
 
   #media {
+    position: relative;
     width: 100%;
     background-image: linear-gradient(
       to right,
@@ -1098,6 +1110,12 @@ font-weight: 800;
     .dropdown ul{
       margin-top: -13px;
       background-color: black;
+    }
+    .topArrow{
+      position: absolute;
+      left: 2.5%;
+      bottom: 1%;
+      padding-bottom: 1%;
   }
   .list2{
     display: flex;
