@@ -245,20 +245,45 @@ text-shadow: .01em .01em .09em rgb(0, 0, 0);
     list-style-position: inside;
     padding-left: 0;
   }
-    img {
-      height: 55px;
-      width: 25%;
-      display: flexbox;
+  }
+  .Graphic-design {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 60%;
+    margin-left: 19%;
+    h3 {
+      width: 100%;
+    }
+    section{
+      display: flex;
+      flex-direction:column;
       justify-content: center;
-      align-self: center;
-      flex-direction: row;
-      border: solid 2px;
-      background-color: rgba(0, 0, 0, 0.205);
+      align-items: center;
+      width: 90%;
+      margin: 10px;
+      img{
+        height: 160px;
+        width: 150%;
+        margin-left: -40%;
+        transition: all .5s ease;
+      }
+      h4{
+        color: black;
+        text-shadow: .01em .01em .15em white;
+        font-weight: 900;
+        font-size: 150%;
+        text-align: center;
+        margin-left: -30%;
+      }
     }
-    .Graphic-design, .photo-manipulation{
-      width: 80%;
-      margin-left: 18%;
-    }
+  }
+  .design p{
+    color: white;
+      text-align: center;
+      font-size: 80%;
+      margin: 2%;
   }
 
   // Media Management
@@ -591,20 +616,45 @@ margin: 2%;
     margin: 2%;
     width: 100%;
   }
-  img {
-    height: 120px;
-    width: 30%;
-    display: flexbox;
+}
+.Graphic-design {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 60%;
+  margin-left: 19%;
+  h3 {
+    width: 100%;
+  }
+  section{
+    display: flex;
+    flex-direction:column;
     justify-content: center;
-    align-self: center;
-    flex-direction: row;
-    border: solid 2px;
-      background-color: rgba(0, 0, 0, 0.205);
+    align-items: center;
+    width: 90%;
+    margin: 10px;
+    img{
+      height: 200px;
+      width: 100%;
+      margin-left: -15%;
+      transition: all .5s ease;
+    }
+    h4{
+      color: black;
+      text-shadow: .01em .01em .15em white;
+      font-weight: 900;
+      font-size: 150%;
+      text-align: center;
+      margin-left: -30%;
+    }
   }
-  .Graphic-design, .photo-manipulation{
-    width: 80%;
-    margin-left: 8%;
-  }
+}
+.design p{
+  color: white;
+    text-align: center;
+    font-size: 80%;
+    margin: 2%;
 }
 
 // Media Management
@@ -1058,27 +1108,50 @@ font-weight: 800;
   }
   }
   
-  .Graphic-design,
-  .photo-manipulation {
+  .Graphic-design {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     width: 60%;
     margin-left: 19%;
-    img {
-      height: 100px;
-      margin: 5px;
-      border: solid 2px;
-      background-color: rgba(0, 0, 0, 0.205);
-      transition: .3s ease-in-out;
-    }
     h3 {
       width: 100%;
     }
-    img:hover, img:focus{
-      height: 110px;
+    section{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      width: 40%;
+      margin: 10px;
+      img{
+        height: 250px;
+        width: 350px;
+        margin: 5px;
+        transition: all .5s ease;
+      }
+      h4{
+        color: black;
+        text-shadow: .01em .01em .15em white;
+        font-weight: 900;
+        font-size: 150%;
+        text-align: center;
+      }
     }
+    img:hover, img:focus{
+      border: solid 2px black;
+    }
+  }
+  .design p{
+    margin-left: 10%;
+    color: white;
+    text-align: center;
+    text-shadow: .02em .02em .15em rgb(0, 0, 0);
+    font-size: 150%;
+    font-weight: 800;
+    width: 80%;
   }
   //graphic design end
   //Media section

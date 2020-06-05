@@ -291,25 +291,61 @@ a {
     list-style-position: inside;
     padding-left: 0;
   }
-  .design img {
-    height: 55px;
-    width: 25%;
-    display: flexbox;
+  .Graphic-design {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    -ms-flex-item-align: center;
-        align-self: center;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    border: solid 2px;
-    background-color: rgba(0, 0, 0, 0.205);
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 60%;
+    margin-left: 19%;
   }
-  .design .Graphic-design, .design .photo-manipulation {
-    width: 80%;
-    margin-left: 18%;
+  .Graphic-design h3 {
+    width: 100%;
+  }
+  .Graphic-design section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 90%;
+    margin: 10px;
+  }
+  .Graphic-design section img {
+    height: 160px;
+    width: 150%;
+    margin-left: -40%;
+    -webkit-transition: all .5s ease;
+    transition: all .5s ease;
+  }
+  .Graphic-design section h4 {
+    color: black;
+    text-shadow: .01em .01em .15em white;
+    font-weight: 900;
+    font-size: 150%;
+    text-align: center;
+    margin-left: -30%;
+  }
+  .design p {
+    color: white;
+    text-align: center;
+    font-size: 80%;
+    margin: 2%;
   }
   #media {
     margin-top: 3%;
@@ -711,25 +747,61 @@ a {
     margin: 2%;
     width: 100%;
   }
-  .design img {
-    height: 120px;
-    width: 30%;
-    display: flexbox;
+  .Graphic-design {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    -ms-flex-item-align: center;
-        align-self: center;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    border: solid 2px;
-    background-color: rgba(0, 0, 0, 0.205);
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 60%;
+    margin-left: 19%;
   }
-  .design .Graphic-design, .design .photo-manipulation {
-    width: 80%;
-    margin-left: 8%;
+  .Graphic-design h3 {
+    width: 100%;
+  }
+  .Graphic-design section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 90%;
+    margin: 10px;
+  }
+  .Graphic-design section img {
+    height: 200px;
+    width: 100%;
+    margin-left: -15%;
+    -webkit-transition: all .5s ease;
+    transition: all .5s ease;
+  }
+  .Graphic-design section h4 {
+    color: black;
+    text-shadow: .01em .01em .15em white;
+    font-weight: 900;
+    font-size: 150%;
+    text-align: center;
+    margin-left: -30%;
+  }
+  .design p {
+    color: white;
+    text-align: center;
+    font-size: 80%;
+    margin: 2%;
   }
   #media {
     margin-top: 3%;
@@ -1279,8 +1351,7 @@ a {
     bottom: 1%;
     padding-bottom: 1%;
   }
-  .Graphic-design,
-  .photo-manipulation {
+  .Graphic-design {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1295,23 +1366,53 @@ a {
     width: 60%;
     margin-left: 19%;
   }
-  .Graphic-design img,
-  .photo-manipulation img {
-    height: 100px;
-    margin: 5px;
-    border: solid 2px;
-    background-color: rgba(0, 0, 0, 0.205);
-    -webkit-transition: .3s ease-in-out;
-    transition: .3s ease-in-out;
-  }
-  .Graphic-design h3,
-  .photo-manipulation h3 {
+  .Graphic-design h3 {
     width: 100%;
   }
-  .Graphic-design img:hover, .Graphic-design img:focus,
-  .photo-manipulation img:hover,
-  .photo-manipulation img:focus {
-    height: 110px;
+  .Graphic-design section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 40%;
+    margin: 10px;
+  }
+  .Graphic-design section img {
+    height: 250px;
+    width: 350px;
+    margin: 5px;
+    -webkit-transition: all .5s ease;
+    transition: all .5s ease;
+  }
+  .Graphic-design section h4 {
+    color: black;
+    text-shadow: .01em .01em .15em white;
+    font-weight: 900;
+    font-size: 150%;
+    text-align: center;
+  }
+  .Graphic-design img:hover, .Graphic-design img:focus {
+    border: solid 2px black;
+  }
+  .design p {
+    margin-left: 10%;
+    color: white;
+    text-align: center;
+    text-shadow: 0.02em 0.02em 0.15em black;
+    font-size: 150%;
+    font-weight: 800;
+    width: 80%;
   }
   #media {
     position: relative;
