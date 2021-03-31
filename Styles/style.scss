@@ -225,7 +225,7 @@ html{
 }
 @media screen and (min-width: 1370px){
     // Landing Page
-    .mobile, .mobilePacks, .mobileBio, .mobilePacksHead,{
+    .mobile, .mobilePacks, .mobileBio, .mobilePacksHead{
         display: none;
     }
     header{
@@ -300,7 +300,7 @@ html{
       justify-content: center;
       align-items: center;
       flex-wrap: wrap;
-      width: 30%;
+      width: 31%;
       transition: all .5s;
       background-color: transparent;
     }
@@ -309,23 +309,25 @@ html{
     filter: brightness(130%);
     -webkit-filter: brightness(130%);
     width: 60%;
-    flex-direction: column;
-    flex-wrap: wrap;
   }
-  #UpArrow{
-      position: relative;
-      background-color: transparent;
-      width: 4%;
+
+  .bottomContact{
+    display: flexbox;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 75%;
+
+    #UpArrow{
+      width: 15%;
       transition: all .5s;
-      float: right;
-      margin-top: 2%;
-      margin-bottom:2%;
-      margin-right: 10%;
+      
   }
+  }
+  
   #UpArrow:hover{
     filter: brightness(200%);
     -webkit-filter: brightness(200%);
-    width: 5%;
+    width: 20%;
   }
   .footer{
     position:relative;
