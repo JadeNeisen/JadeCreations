@@ -256,7 +256,7 @@ html {
 }
 
 @media screen and (min-width: 1370px) {
-  .mobile, .mobilePacks, .mobileBio, .mobilePacksHead, .footer {
+  .mobile, .mobilePacks, .mobileBio, .mobilePacksHead {
     display: none;
   }
   header {
@@ -321,20 +321,7 @@ html {
     position: relative;
   }
   .demos {
-    position: absolute;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    position: relative;
     z-index: 1;
     margin-left: 5%;
     margin-top: 2%;
@@ -345,7 +332,22 @@ html {
     color: transparent;
   }
   .demos img {
-    width: 102.5%;
+    margin-left: 2%;
+    margin-bottom: 2%;
+    display: flexbox;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 30%;
     -webkit-transition: all .5s;
     transition: all .5s;
     background-color: transparent;
@@ -353,21 +355,32 @@ html {
   .demos img:hover {
     filter: brightness(130%);
     -webkit-filter: brightness(130%);
-    width: 105%;
+    width: 60%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
   #UpArrow {
-    position: absolute;
-    bottom: -965px;
-    right: 5%;
+    position: relative;
     background-color: transparent;
     width: 4%;
     -webkit-transition: all .5s;
     transition: all .5s;
+    float: right;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    margin-right: 10%;
   }
   #UpArrow:hover {
     filter: brightness(200%);
     -webkit-filter: brightness(200%);
     width: 5%;
+  }
+  .footer {
+    position: relative;
   }
 }
 /*# sourceMappingURL=style.css.map */
