@@ -12,7 +12,7 @@ html {
 }
 
 @media screen and (max-width: 767px) {
-  header, #PortBackground, #UpArrow {
+  header, #PortBackground, #UpArrow, .bottomContact {
     display: none;
   }
   .mobile {
@@ -134,7 +134,7 @@ html {
 }
 
 @media screen and (min-width: 768px) and (max-width: 1369px) {
-  header, #PortBackground, #UpArrow {
+  header, #PortBackground, #UpArrow, .bottomContact {
     display: none;
   }
   .mobile {
@@ -285,7 +285,7 @@ html {
             flex-direction: row;
     height: 65px;
     background-color: transparent;
-    margin-left: 5%;
+    margin-left: 2%;
     -webkit-transition: all .5s;
     transition: all .5s;
   }
