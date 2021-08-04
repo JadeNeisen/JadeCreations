@@ -264,10 +264,10 @@ html {
   }
   .contact {
     position: absolute;
-    top: .5%;
-    left: 60%;
+    top: 1.5%;
+    left: 72vw;
     background-color: transparent;
-    width: 40%;
+    width: 25vw;
   }
   .contact img {
     display: -webkit-inline-box;
@@ -285,7 +285,7 @@ html {
             flex-direction: row;
     height: 65px;
     background-color: transparent;
-    margin-left: 2%;
+    margin-left: 3%;
     -webkit-transition: all .5s;
     transition: all .5s;
   }
@@ -293,32 +293,22 @@ html {
     color: transparent;
     background: transparent;
   }
-  #contact:hover {
+  #contact:hover{
     filter: brightness(200%);
     -webkit-filter: brightness(200%);
   }
-  #viewPort {
+  .Down img{
     position: absolute;
-    top: 45%;
-    right: 26%;
-    background-color: transparent;
-  }
-  #arrow {
-    position: absolute;
-    top: 50%;
-    left: 62.5%;
-    cursor: pointer;
-    background-color: transparent;
+    bottom: 5vh;
+    left: 48vw;
+    width: 3%;
     -webkit-transition: all .5s;
     transition: all .5s;
   }
-  #arrow:hover {
-    filter: brightness(180%);
-    -webkit-filter: brightness(180%);
-    width: 10%;
-  }
-  #PortBackground {
-    position: relative;
+  .Down img:hover{
+    filter: brightness(200%);
+    -webkit-filter: brightness(200%);
+    width: 5%;
   }
   .demos {
     position: relative;
@@ -382,4 +372,4 @@ html {
     position: relative;
   }
 }
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=Style.css.map */
