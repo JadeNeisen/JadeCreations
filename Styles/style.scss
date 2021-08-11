@@ -3,20 +3,22 @@
     margin: 0;
     box-sizing: border-box;
     padding: 0;
-    background-color: rgb(0, 0, 0);
-    font-family: "dorsa";
+    font-family: 'Julius Sans One', sans-serif;
 }
 html{
     scroll-behavior: smooth;
 }
 
 @media screen and (max-width: 767px){
-    header, #PortBackground, #UpArrow, .bottomContact{
+    header, .viewPort, #Background, #top1, #top2{
         display: none;
     }
+    body{
+      background-color: black;
+    }
     .mobile{
-       background-image: url("../images/OnBrandMobileHeader.png");
-        width: 100%;
+       background-image: url("/images/OnBrandMobileHeader.png");
+        width: 100vw;
         background-repeat: no-repeat;
         background-size: contain;
         background-position-x: center;
@@ -27,7 +29,8 @@ html{
     .hamburger {
         display: block;
         position: absolute;
-        top: 1vh;
+        top: 1.5vh;
+        left: 1.5vw;
       }
       .line1,
       .line2,
@@ -63,7 +66,7 @@ html{
           border: none;
           color: white;
           font-stretch: ultra-expanded;
-          font-size: 200%;
+          font-size: 150%;
           text-align: center;
       }
     
@@ -86,42 +89,62 @@ html{
         opacity: 1;
         z-index: 1;
       }
-      #Portfolio{
+      // About
+      #About{
         position: relative;
-        background-color: black;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 100%;
+        }
+        .Bio{
+          width: 80vw;
+          top: 30vh;
+          margin-left: 10%;
+          color: white;
+          font-size: 100%;
+          font-weight: bold;
+          text-shadow: 2px 2px 2px black;
+          text-align: center;
+         h3{
+           margin-top: 2%;
+         }
+         ul{
+           margin-left: 1.5%;
+           list-style-type: none;
+         }
+        }
+      // Portfolio
+      #Portfolio h2{
         color: white;
+        font-size: 105%;
         text-align: center;
-        font-size: 150%;
-        img{
-          width: 100vw;
+        margin: 2%;
+        a{
+          text-decoration: none;
         }
       }
-      .mobileBio{
-        background-color:rgba(172, 1, 172, 0.5);
-        margin: 1.5%;
-        padding: 2%;
-        text-shadow: .01em .01em .15em black;
-        font-size: 120%;
-        font-stretch: ultra-expanded;
+      #PortMobile, #BioMobile{
+        width: 80vw;
+        position: relative;
+        left: 10vw;
       }
-      .mobilePacksHead{
-        font-size: 110%;
-        text-shadow: .01em .01em .09em rgb(150, 3, 150);
-      }
-      .footer{
-        height: 50vh;
+      .portImages{
+        position: relative;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        img{
+          width: 30vw;
+        }
       }
 }
 @media screen and (min-width: 768px) and (max-width: 1369px){
-  header, #PortBackground, #UpArrow, .bottomContact{
+  header, .viewPort, #Background, #top1, #top2{
     display: none;
 }
+body{
+  background-color: black;
+}
 .mobile{
-    background-image: url("../images/OnBrandMobileHeader.png");
+   background-image: url("/images/OnBrandMobileHeader.png");
     width: 100vw;
     background-repeat: no-repeat;
     background-size: contain;
@@ -133,13 +156,14 @@ html{
 .hamburger {
     display: block;
     position: absolute;
-    top: 1vh;
+    top: 2vh;
+    left: 2vh;
   }
   .line1,
   .line2,
   .line3 {
-    width: 80px;
-    height: 8px;
+    width: 50px;
+    height: 5px;
     display: block;
     background-image: linear-gradient(rgb(255, 0, 255), rgba(0, 0, 0, 0.397));
     margin: 8px;
@@ -155,7 +179,7 @@ html{
   .mobile-dropdown {
     position: absolute;
     top: 10vh;
-    width: 98vw;
+    width: 98%;
     opacity: 0;
     transition: all 0.5s ease-in-out;
     margin-left: 2%;
@@ -169,18 +193,18 @@ html{
       border: none;
       color: white;
       font-stretch: ultra-expanded;
-      font-size: 300%;
+      font-size: 170%;
       text-align: center;
   }
 
   /* Nav Animations */
 
   .change .line1 {
-    transform: translate(3px, 14px) rotate(45deg);
+    transform: translate(-3px, 10px) rotate(45deg);
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgb(167, 0, 167));
   }
   .change .line3 {
-    transform: translate(-2px, -15px) rotate(-45deg);
+    transform: translate(-5px, -15px) rotate(-45deg);
     background-image: linear-gradient(rgb(167, 0, 167), rgba(0, 0, 0, 0.5));
   }
   .change .line2 {
@@ -188,148 +212,214 @@ html{
   }
   .mobile-dropdown.active {
     position: absolute;
-    width: 98vw;
+    width: 98%;
     opacity: 1;
     z-index: 1;
   }
-  #Portfolio{
+  // About
+  #About{
     position: relative;
-    background-color: black;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100vw;
+    }
+    .Bio{
+      width: 80vw;
+      top: 30vh;
+      margin-left: 10%;
+      color: white;
+      font-size: 150%;
+      font-weight: bold;
+      text-shadow: 2px 2px 2px black;
+      text-align: center;
+     h3{
+       margin-top: 2%;
+     }
+     ul{
+       margin-left: 1.5%;
+       list-style-type: none;
+     }
+    }
+  // Portfolio
+  #Portfolio h2{
     color: white;
+    font-size: 150%;
     text-align: center;
-    font-size: 250%;
-    img{
-      width: 90vw;
+    margin: 3%;
+    a{
+      text-decoration: none;
     }
   }
-  .mobileBio{
-    background-color:rgba(172, 1, 172, 0.5);
-    margin: 1.5%;
-    padding: 2%;
-    text-shadow: .01em .01em .15em black;
-    font-size: 120%;
-    font-stretch: ultra-expanded;
+  #PortMobile, #BioMobile{
+    width: 80vw;
+    position: relative;
+    left: 10vw;
   }
-  .mobilePacksHead{
-    font-size: 110%;
-    text-shadow: .01em .01em .09em rgb(150, 3, 150);
+  .portImages{
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    img{
+      width: 30vw;
+    }
   }
-  .footer{
-    height: 50vh;
-  }
-
 }
+
 @media screen and (min-width: 1370px){
     // Landing Page
-    .mobile, .mobilePacks, .mobileBio, .mobilePacksHead{
+    .mobile, #PortBackground, #BioMobile, #PortMobile {
         display: none;
+    }
+    body{
+      background-color: black;
+    }
+    #Background{
+      width: 95vw;
+      height: 100vh;
     }
     header{
         position: relative;
     }
     .contact{
-        position: absolute;
-        top: .5%;
-        left: 60%;
-        background-color: transparent;
-        width: 40%;
-        img{
-            display: inline-flex;
-            justify-content: space-evenly;
-            align-items: center;
-            flex-direction: row;
-            height: 65px;
-            background-color: transparent;
-            margin-left: 2%;
-            transition: all .5s;
-            
-        }
-    }
-    .contact a{
-            color: transparent;
-            background: transparent;
-    }
-    #contact:hover{
-        filter: brightness(200%);
-       -webkit-filter: brightness(200%);
-    }
-    #viewPort{
-        position: absolute;
-        top: 45%;
-        right: 26%;
-        background-color: transparent;
-    }
-   #arrow{
-       position: absolute;
-       top: 50%;
-       left: 62.5%;
-       cursor: pointer;
-       background-color: transparent;
-       transition: all .5s;
-   }
-   #arrow:hover {
-       filter: brightness(180%);
-       -webkit-filter: brightness(180%);
-       width: 10%;
-       
-   }
-
-   //    Portfolio Page
-   #PortBackground{
-       position: relative;
-   }
-   .demos{
-    position: relative;
-    z-index: 1;
-    margin-left: 5%;
-    margin-top: 2%;
-    width: 90%;
-    a{
-        background-color: transparent;
-        color: transparent;
-    }
-    img{
-      margin-left: 2%;
-      margin-bottom: 2%;
-      display: flexbox;
+      position: absolute;
+      display: flex;
       flex-direction: row;
-      justify-content: center;
-      align-items: center;
-      flex-wrap: wrap;
-      width: 31%;
-      transition: all .5s;
-      background-color: transparent;
+      justify-content: space-evenly;
+      align-items: flex-end;
+      width: 35vw;
+      top: 3vh;
+      left: 60vw;
+      background: transparent;
+      img{
+        height: 70px;
+        transition: all .3s ease-in-out;
+      }
+     
+    }
+    
+    .Down{
+      position: absolute;
+      bottom: 5vh;
+      left:45vw;
+      img{
+        width: 40%;
+        height: 10%;
+        background: transparent;
+        transition: all .3s ease-in-out;
+      }
+    }
+    
+
+
+   //    About Page
+ #About{
+   position: relative;
+   }
+   .Bio{
+     position: absolute;
+     width: 80vw;
+     top: 22vh;
+     left: 9vw;
+     color: white;
+     font-size: 155%;
+     font-weight: bold;
+     text-shadow: 2px 2px 2px black;
+    h3{
+      margin-top: 2%;
+    }
+    ul{
+      margin-left: 1.5%;
+    }
+   }
+ 
+ .viewPort{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   margin-top: 5%;
+   text-shadow: 3px 3px black;
+   font-size: 170%;
+   img{
+    width: 40%;
+    height: 10%;
+    margin-left: 5%;
+    transition: all .3s ease-in-out;
+   }
+ }
+
+
+
+ //Portfolio Page
+ #Portfolio{
+   position: relative;
+   h2{
+    position: absolute;
+    bottom: 20vh;
+    left: 23vw;
+    color: white;
+    text-shadow: 2px 2px black;
+    font-size: 200%;
+    text-align: center;
+    a{
+      color: purple;
+      text-decoration: none;
+      text-shadow: 2px 2px black;
+      transition: all .3s ease-in-out;
     }
   }
-  .demos img:hover{
-    filter: brightness(130%);
-    -webkit-filter: brightness(130%);
-    width: 60%;
-  }
-
-  .bottomContact{
-    display: flexbox;
-    flex-direction: row;
-    align-items: center;
-    margin-left: 75%;
-
-    #UpArrow{
-      width: 15%;
-      transition: all .5s;
-      
-  }
-  }
+ }
+ .portImages{
+   position: absolute;
+   top: 28vh;
+   width: 90%;
+   left: 7vw;
+   img{
+     width: 10%;
+     transition: all .3s ease-in-out;
+   }
   
-  #UpArrow:hover{
-    filter: brightness(200%);
-    -webkit-filter: brightness(200%);
-    width: 20%;
-  }
-  .footer{
-    position:relative;
-  }
+ }
+ #top1, #top2{
+  position: absolute;
+  bottom: 5vh;
+  right: 5vw;
+ color: purple;
+ text-decoration: none;
+ text-shadow: 2px 2px black;
+ font-weight: bolder;
+ transition: all .3s ease-in-out;
+}
+ 
+//  Effects
+.contact img:hover{
+  filter: brightness(250%);
+ -webkit-filter: brightness(250%);
+ height: 72px;
+}
+.Down img:hover{
+  filter: brightness(250%);
+  -webkit-filter: brightness(250%);
+  width: 50%;
+}
+.viewPort img:hover{
+  filter: brightness(250%);
+  -webkit-filter: brightness(250%);
+  width: 50%;
+ }
+.portImages img:hover{
+  filter: brightness(130%);
+  -webkit-filter: brightness(130%);
+  width: 11%;
+ }
+ #Portfolio a:hover{
+  filter: brightness(250%);
+  -webkit-filter: brightness(250%);
+  font-size: 105%;
+ }
+ #top1:hover, #top2:hover{
+  filter: brightness(250%);
+  -webkit-filter: brightness(250%);
+  font-size: 105%;
+ }
+ 
 }
