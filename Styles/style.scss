@@ -365,7 +365,7 @@ body{
       text-decoration: none;
       text-shadow: 2px 2px black;
       transition: all .3s ease-in-out;
-    }
+   }
   }
  }
  .portImages{
@@ -374,22 +374,45 @@ body{
    width: 90%;
    left: 7vw;
    img{
-     width: 10%;
+     width: 12%;
      transition: all .3s ease-in-out;
    }
-  
  }
- #top1, #top2{
+ .portImages h3{
+  color: white;
+  margin-top: 3%;
+  margin-bottom: 1%;
+ }
+ .more{
+  position: absolute;
+  width: 100%;
+  bottom: -30vh;
+  color: white;
+  a{
+    color: purple;
+  }
+ }
+ #top1{
   position: absolute;
   bottom: 5vh;
   right: 5vw;
- color: purple;
- text-decoration: none;
- text-shadow: 2px 2px black;
- font-weight: bolder;
- transition: all .3s ease-in-out;
+  color: purple;
+  text-decoration: none;
+  text-shadow: 2px 2px black;
+  font-weight: bolder;
+  transition: all .3s ease-in-out;
 }
- 
+#top2{
+  position: absolute;
+  bottom: 5vh;
+  right: 5vw;
+  color: purple;
+  text-decoration: none;
+  text-shadow: 2px 2px black;
+  font-weight: bolder;
+  transition: all .3s ease-in-out;
+}
+
 //  Effects
 .contact img:hover{
   filter: brightness(250%);
@@ -407,13 +430,13 @@ body{
   width: 50%;
  }
 .portImages img:hover{
-  filter: brightness(130%);
-  -webkit-filter: brightness(130%);
-  width: 11%;
+  filter: brightness(110%);
+  -webkit-filter: brightness(110%);
+  width: 13%;
  }
  #Portfolio a:hover{
-  filter: brightness(250%);
-  -webkit-filter: brightness(250%);
+  filter: brightness(110%);
+  -webkit-filter: brightness(110%);
   font-size: 105%;
  }
  #top1:hover, #top2:hover{
