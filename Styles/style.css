@@ -13,11 +13,9 @@ html {
   header, .viewPort, #Background, #top1, #top2 {
     display: none;
   }
-
   body {
     background-color: black;
   }
-
   .mobile {
     background-image: url("/images/OnBrandMobileHeader.png");
     width: 100vw;
@@ -28,17 +26,15 @@ html {
     align-items: center;
     height: 40vh;
   }
-
   .hamburger {
     display: block;
     position: absolute;
     top: 1.5vh;
     left: 1.5vw;
   }
-
   .line1,
-.line2,
-.line3 {
+  .line2,
+  .line3 {
     width: 50px;
     height: 5px;
     display: block;
@@ -47,14 +43,12 @@ html {
     border-radius: 10px;
     transition: all 0.5s ease-in-out;
   }
-
   .mobile-dropdown li {
     width: 98%;
     padding: 1.5%;
     background-color: rgba(172, 1, 172, 0.5);
     border: solid 1px rgb(32, 32, 32);
   }
-
   .mobile-dropdown {
     position: absolute;
     top: 10vh;
@@ -67,7 +61,6 @@ html {
     background-color: transparent;
     color: transparent;
   }
-
   .mobile-dropdown button {
     background-color: transparent;
     border: none;
@@ -76,33 +69,27 @@ html {
     font-size: 150%;
     text-align: center;
   }
-
   /* Nav Animations */
   .change .line1 {
     transform: translate(-3px, 10px) rotate(45deg);
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgb(167, 0, 167));
   }
-
   .change .line3 {
     transform: translate(-5px, -15px) rotate(-45deg);
     background-image: linear-gradient(rgb(167, 0, 167), rgba(0, 0, 0, 0.5));
   }
-
   .change .line2 {
     opacity: 0;
   }
-
   .mobile-dropdown.active {
     position: absolute;
     width: 98%;
     opacity: 1;
     z-index: 1;
   }
-
   #About {
     position: relative;
   }
-
   .Bio {
     width: 80vw;
     top: 30vh;
@@ -120,7 +107,6 @@ html {
     margin-left: 1.5%;
     list-style-type: none;
   }
-
   #Portfolio h2 {
     color: white;
     font-size: 105%;
@@ -130,13 +116,11 @@ html {
   #Portfolio h2 a {
     text-decoration: none;
   }
-
   #PortMobile, #BioMobile {
     width: 80vw;
     position: relative;
     left: 10vw;
   }
-
   .portImages {
     position: relative;
     display: flex;
@@ -152,11 +136,9 @@ html {
   header, .viewPort, #Background, #top1, #top2 {
     display: none;
   }
-
   body {
     background-color: black;
   }
-
   .mobile {
     background-image: url("/images/OnBrandMobileHeader.png");
     width: 100vw;
@@ -167,17 +149,15 @@ html {
     align-items: center;
     height: 40vh;
   }
-
   .hamburger {
     display: block;
     position: absolute;
     top: 2vh;
     left: 2vh;
   }
-
   .line1,
-.line2,
-.line3 {
+  .line2,
+  .line3 {
     width: 50px;
     height: 5px;
     display: block;
@@ -186,14 +166,12 @@ html {
     border-radius: 10px;
     transition: all 0.5s ease-in-out;
   }
-
   .mobile-dropdown li {
     width: 98%;
     padding: 1.5%;
     background-color: rgba(172, 1, 172, 0.5);
     border: solid 1px rgb(32, 32, 32);
   }
-
   .mobile-dropdown {
     position: absolute;
     top: 10vh;
@@ -206,7 +184,6 @@ html {
     background-color: transparent;
     color: transparent;
   }
-
   .mobile-dropdown button {
     background-color: transparent;
     border: none;
@@ -215,33 +192,27 @@ html {
     font-size: 170%;
     text-align: center;
   }
-
   /* Nav Animations */
   .change .line1 {
     transform: translate(-3px, 10px) rotate(45deg);
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgb(167, 0, 167));
   }
-
   .change .line3 {
     transform: translate(-5px, -15px) rotate(-45deg);
     background-image: linear-gradient(rgb(167, 0, 167), rgba(0, 0, 0, 0.5));
   }
-
   .change .line2 {
     opacity: 0;
   }
-
   .mobile-dropdown.active {
     position: absolute;
     width: 98%;
     opacity: 1;
     z-index: 1;
   }
-
   #About {
     position: relative;
   }
-
   .Bio {
     width: 80vw;
     top: 30vh;
@@ -259,7 +230,6 @@ html {
     margin-left: 1.5%;
     list-style-type: none;
   }
-
   #Portfolio h2 {
     color: white;
     font-size: 150%;
@@ -269,13 +239,11 @@ html {
   #Portfolio h2 a {
     text-decoration: none;
   }
-
   #PortMobile, #BioMobile {
     width: 80vw;
     position: relative;
     left: 10vw;
   }
-
   .portImages {
     position: relative;
     display: flex;
@@ -291,20 +259,16 @@ html {
   .mobile, #PortBackground, #BioMobile, #PortMobile {
     display: none;
   }
-
   body {
     background-color: black;
   }
-
   #Background {
     width: 95vw;
     height: 100vh;
   }
-
   header {
     position: relative;
   }
-
   .contact {
     position: absolute;
     display: flex;
@@ -320,7 +284,6 @@ html {
     height: 70px;
     transition: all 0.3s ease-in-out;
   }
-
   .Down {
     position: absolute;
     bottom: 5vh;
@@ -332,11 +295,9 @@ html {
     background: transparent;
     transition: all 0.3s ease-in-out;
   }
-
   #About {
     position: relative;
   }
-
   .Bio {
     position: absolute;
     width: 80vw;
@@ -353,7 +314,6 @@ html {
   .Bio ul {
     margin-left: 1.5%;
   }
-
   .viewPort {
     display: flex;
     justify-content: center;
@@ -369,7 +329,6 @@ html {
     margin-left: 5%;
     transition: all 0.3s ease-in-out;
   }
-
   #Portfolio {
     position: relative;
   }
@@ -388,7 +347,6 @@ html {
     text-shadow: 2px 2px black;
     transition: all 0.3s ease-in-out;
   }
-
   .portImages {
     position: absolute;
     top: 28vh;
@@ -399,13 +357,11 @@ html {
     width: 12%;
     transition: all 0.3s ease-in-out;
   }
-
   .portImages h3 {
     color: white;
     margin-top: 3%;
     margin-bottom: 1%;
   }
-
   .more {
     position: absolute;
     width: 100%;
@@ -415,7 +371,6 @@ html {
   .more a {
     color: purple;
   }
-
   #top1 {
     position: absolute;
     bottom: 5vh;
@@ -426,7 +381,6 @@ html {
     font-weight: bolder;
     transition: all 0.3s ease-in-out;
   }
-
   #top2 {
     position: absolute;
     bottom: 5vh;
@@ -437,37 +391,31 @@ html {
     font-weight: bolder;
     transition: all 0.3s ease-in-out;
   }
-
   .contact img:hover {
     filter: brightness(250%);
     -webkit-filter: brightness(250%);
     height: 72px;
   }
-
   .Down img:hover {
     filter: brightness(250%);
     -webkit-filter: brightness(250%);
     width: 50%;
   }
-
   .viewPort img:hover {
     filter: brightness(250%);
     -webkit-filter: brightness(250%);
     width: 50%;
   }
-
   .portImages img:hover {
     filter: brightness(110%);
     -webkit-filter: brightness(110%);
     width: 13%;
   }
-
   #Portfolio a:hover {
     filter: brightness(110%);
     -webkit-filter: brightness(110%);
     font-size: 105%;
   }
-
   #top1:hover, #top2:hover {
     filter: brightness(250%);
     -webkit-filter: brightness(250%);
